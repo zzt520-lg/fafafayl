@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* 顶部栏 */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d90000;
+  color: white;
+  padding: 10px 12px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 4px 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.icon {
+  margin-left: 6px;
+}
+
+/* 横幅 */
+.banner img {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+/* 分类导航 */
+.category {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.category button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.category button.active {
+  color: #d90000;
+  border-bottom: 2px solid #d90000;
+}
+
+/* 游戏区 */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.game-card {
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.game-card img {
+  width: 70%;
+  border-radius: 8px;
+}
+
+.game-card p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-top: 1px solid #ddd;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+  color: #666;
+}
+
+.nav-item.active {
+  color: #d90000;
+}
+
+.nav-item span {
+  display: block;
+  font-size: 20px;
+}
